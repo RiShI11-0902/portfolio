@@ -1,0 +1,94 @@
+[
+    {
+      "title": "Code Up",
+      "tech": "React js, Mongo db, Node js, Express js, Socket IO",
+      "image": "mern1",
+      "codeLink":"https://github.com/RiShI11-0902/Code-up",
+      "visit":"https://code-up-1.onrender.com/"
+    },
+    {
+      "title": "Pinterest Clone",
+      "tech": "Node js, Express js, EJS",
+      "image": "mern2",
+      "codeLink":"https://github.com/RiShI11-0902/pinterest",
+      "visit":"https://pinterest-bxrl.onrender.com"
+    },
+    {
+      "title": "Crypto App",
+      "tech": "React js, Tailwind CSS, Rapid API",
+      "image": "react1",
+      "codeLink":"https://github.com/RiShI11-0902/Mycoin-react-cryptoApp",
+      "visit":"https://mycoin-codecollege.netlify.app/"
+    },
+    {
+      "title": "Google Clone",
+      "tech": "React js, Tailwind CSS, Rapid API",
+      "image": "react3",
+      "codeLink":"",
+      "visit":"https://google-by-rishicodes.netlify.app/"
+    },
+    {
+      "title": "Landing Page",
+      "tech": "React js, Tailwind CSS",
+      "image": "react4",
+      "codeLink":"",
+      "visit":"https://hoobank-codecollege.netlify.app/"
+    },
+    {
+      "title": "Gett Fit",
+      "tech": "React js, Tailwind CSS, Rapid API",
+      "image": "react2",
+      "codeLink":"https://github.com/RiShI11-0902/Get-fit-app",
+      "visit":"https://get-fit-codecollege.netlify.app/"
+    },
+    {
+      "title": "Dashboard",
+      "tech": "React js, Tailwind CSS",
+      "image": "react5",
+      "codeLink":"https://github.com/RiShI11-0902/dashboard",
+      "visit":"https://dashboard-codecollege.netlify.app/"
+    },
+    {
+      "title": "Todo App",
+      "tech": "React js, Tailwind CSS",
+      "image": "react6",
+      "codeLink":"",
+      "visit":"https://rishi-codes-notesapp.netlify.app/"
+    },
+    {
+      "title": "Advice Generator",
+      "tech": "HTML, Tailwind CSS, Javascript",
+      "image": "project1",
+      "codeLink":"",
+      "visit":""
+    },
+    {
+      "title": "Hit the Green",
+      "tech": "HTML, Tailwind CSS, Javascript",
+      "image": "project2",
+      "codeLink":"",
+      "visit":"https://hit-the-green.netlify.app/"
+    },
+    {
+      "title": "Guess the Number",
+      "tech": "HTML, Tailwind CSS, Javascript",
+      "image": "project3",
+      "codeLink":"",
+      "visit":"https://guess-me-codecollege.netlify.app/"
+    },
+    {
+      "title": "Car Landing Page",
+      "tech": "HTML, Tailwind CSS, Javascript",
+      "image": "project4",
+      "codeLink":"",
+      "visit":"https://lambo-cars.netlify.app/"
+    },
+    {
+      "title": "Snekears Ecommerce",
+      "tech": "HTML, Tailwind CSS, Javascript",
+      "image": "project5",
+      "codeLink":"",
+      "visit":"https://sneaker-commerce.netlify.app/"
+    }
+  ]
+  
