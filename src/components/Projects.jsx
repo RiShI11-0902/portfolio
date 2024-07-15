@@ -90,7 +90,7 @@ const Projects = () => {
                 <div>
                     <div className='w-fit mx-auto -mt-10'><p><input onChange={(event) => filter(event.target.value)} type="text" class="w-80 px-5 text-left text-black h-12 my-2 border rounded-lg border-1 border-gray-300 outline-blue-500"
                         placeholder="Search By Tech" /></p></div>
-                    <div id='imageBox' className={` ${hide ? 'hidden' : 'block'} top-44 z-50 w-52 2xl:top-56 2xl:h-56 2xl:w-[30rem] 2xl:left-[60%] left-[40%] p-20 fixed bg-contain bg-no-repeat bg-[url(${image})]`}>
+                    <div id='imageBox' className={` ${hide ? 'hidden' : 'block'} top-44 z-50 w-52 2xl:top-72 2xl:h-72 2xl:w-[30rem] 2xl:left-[70%] left-[40%] p-20 fixed bg-contain bg-no-repeat bg-[url(${image})]`}>
                     </div>
                     <div className="projects-container mt-20 p-5 space-y-5" >
                         {
