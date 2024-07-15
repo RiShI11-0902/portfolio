@@ -22,7 +22,7 @@ const Certification = () => {
                 </div>
                     : ""
             }
-            <div className='bg-gray-900 text-white h-full overflow-hidden overflow-y-hiddens'>
+            <div className='bg-gray-900 text-white  h-screen overflow-hidden overflow-y-hiddens'>
                 <Animation />
             <Navbar />
 
