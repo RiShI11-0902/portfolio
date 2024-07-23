@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { avatar } from '../assets'
+import { avatar, rishi } from '../assets'
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -23,8 +23,8 @@ const About = () => {
                 <div className='lg:w-60 w-56 lg:p-40 md:p-36  bg-blue-300 absolute md:left-72  md:top-40 rounded-full lg:left-96 2xl:left-48 top-36 left-24 border border-blue-300'></div>
               </div>
               <div className=' h-full w-[19rem] md:w-[25rem] lg:w-[19rem] rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100   flex flex-col space-y-5 items-center text-white p-6 '>
-                <div class="profile "><img class="w-32  "
-                  src={avatar} alt="" /></div>
+                <div class="profile "><img class="w-32 rounded-full "
+                  src={rishi} alt="" /></div>
                 <div className='name'>
                   <p className='font-bold text-2xl belanosima-bold'>Rushikesh Bagade</p>
                 </div>

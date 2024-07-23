@@ -20,9 +20,10 @@ import c2 from './c2.png'
 import c3 from './c3.png'
 import c4 from './c4.png'
 
+import rishi from './risshikesh.jpg'
 
 
 
 
 
-export {avatar,project2,project1,project3,project4,project5,react1,react2,react3,react4,react5,react6,mern1,mern2,c1,c2,c3,c4}
+export {avatar,project2,project1,project3,project4,project5,react1,react2,react3,react4,react5,react6,mern1,mern2,c1,c2,c3,c4,rishi}
