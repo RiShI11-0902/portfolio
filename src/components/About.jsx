@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='relative mt-10'>
 
-          <div className="div flex flex-col 2xl:flex-row justify-around  p-5 2xl:p-10 w-[90%] mx-auto">
+          <div className="div flex flex-col 2xl:flex-row md:flex-row justify-around  p-5 2xl:p-10 w-[90%] mx-auto">
             <div className='md:mx-auto'>
               <div className='    '>
                 <div className='lg:w-60 w-56 p-32  md:p-40 bg-red-300 absolute md:left-36 md:top-0 lg:left-60 2xl:left-36 rounded-full top-0 left-0 border border-blue-300'></div>
