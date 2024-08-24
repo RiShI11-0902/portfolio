@@ -14,17 +14,17 @@ const Certification = () => {
             {
                 toggle ? <div className="popup-image fixed bg-black z-[100] h-full w-full top-0 left-0 opacity-90">
                     <div className="preview p-5" data-target="number-1">
-                        <RxCross1  onClick={() => setToggle(false)} className='bg-white absolute top-5 right-6 cursor-pointer ' />
-                            <RxCross1 onClick={() => setToggle(false)}  className='w-48 absolute top-0 left-0' />
+                        <RxCross1 onClick={() => setToggle(false)} className='bg-white absolute top-5 right-6 cursor-pointer ' />
+                        <RxCross1 onClick={() => setToggle(false)} className='w-48 absolute top-0 left-0' />
                         <img id="main" className=" mx-auto object-cover  w-[27rem] my-16" src={img}
                             alt="" />
                     </div>
                 </div>
                     : ""
             }
-            <div className='bg-gray-900 text-white  h-screen overflow-hidden overflow-y-hiddens'>
+            <div className='bg-gray-900 text-white   overflow-hidden overflow-y-hidden h-full'>
                 <Animation />
-            <Navbar />
+                <Navbar />
 
                 <p id='certification' className='text-2xl text-center mt-10 font-extrabold'>CERTIFICATIONS</p>
                 <div className="list md:grid md:grid-cols-3 md:w-fit p-5 space-y-5 w-fit md:space-y-0 mx-auto mt-10 md:gap-10 ">
