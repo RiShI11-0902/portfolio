@@ -38,7 +38,7 @@ const Home = () => {
 
       <div className='bg-gray-900 text-white h-screen overflow-hidden overflow-y-hidden'>
         <Navbar />
-        <div className='2xl:mt-52 main Container'>
+        <div className='2xl:mt-40 main Container'>
           <div className='mx-auto 2xl:w-[40rem] xl:w-[40rem] md:w-[40rem]   flex items-center justify-center p-10'>
             <p className='text-center leading-3 2xl:mt-10'> <span className='font-bold text-xl'>Hi,</span> <span className='hurricane-regular text-4xl leading-snug'>I'm  <span className={`${change} transition-colors duration-1000`}>Rushikesh Bagade, </span> <br className='hidden 2xl:block' />
               I'm a MERN Stack Developer <br className='hidden 2xl:block' /> with a Passion for React.js Solutions.</span>
