@@ -1,86 +1,61 @@
-import React from 'react'
-import Navbar from './Navbar'
-import { avatar, rishi } from '../assets'
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import React from 'react';
+import Navbar from './Navbar';
+import { rishi } from '../assets';
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Animation from './Animation';
-
 
 const About = () => {
   return (
     <>
-      <div className='bg-gray-900 text-white md:h-screen overflow-hidden  overflow-y-hidden '>
-      {/* <Animation /> */}
+      <div className="bg-gray-900 overflow-hidden text-white min-h-screen flex flex-col items-center">
         <Navbar />
+        <div className="container mx-auto px-5 md:px-10 py-16 flex flex-col lg:flex-row items-center lg:space-x-10">
+          {/* Profile Section */}
+          <div className="relative w-full lg:w-1/3 flex justify-center lg:justify-end mb-12 lg:mb-0">
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 left-0 w-28 h-28 md:w-40 md:h-40 bg-blue-500 rounded-full opacity-20 blur-xl"></div>
+            <div className="absolute bottom-0 right-0 w-28 h-28 md:w-40 md:h-40 bg-red-500 rounded-full opacity-20 blur-xl"></div>
 
-        <div className='relative mt-10'>
-
-          <div className="div flex flex-col 2xl:flex-row md:flex-row justify-around  p-5 2xl:p-10 w-[90%] mx-auto">
-            <div className='md:mx-auto'>
-              <div className='    '>
-                <div className='lg:w-60 w-56 p-32  md:p-40 bg-red-300 absolute md:left-36 md:top-0 lg:left-60 2xl:left-36 rounded-full top-0 left-0 border border-blue-300'></div>
-                <div className='lg:w-60 w-56 lg:p-40 md:p-36  bg-blue-300 absolute md:left-72  md:top-40 rounded-full lg:left-96 2xl:left-48 top-36 left-24 border border-blue-300'></div>
-              </div>
-              <div className=' h-full w-[19rem] md:w-[25rem] lg:w-[19rem] rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100   flex flex-col space-y-5 items-center text-white p-6 '>
-                <div class="profile "><img class="w-32 rounded-full "
-                  src={rishi} alt="" /></div>
-                <div className='name'>
-                  <p className='font-bold text-2xl belanosima-bold'>Rushikesh Bagade</p>
-                </div>
-                <div className='bg-black text-black h-1 w-10 py-[1px]' ></div>
-                <div>
-                  <p className='font-semibold text-lg italic edu-tas-beginner-font text-neutral-900'>Software Developer</p>
-                </div>
-                <div className='flex flex-row space-x-5 text-purple-700 cursor-pointer'>
-                 <a href="https://www.instagram.com/rishi_codes/"><FaInstagram /></a> 
-                 <a href="https://www.linkedin.com/in/rushikesh-bagade11"><FaLinkedin /></a> 
-                 <a href="https://github.com/RiShI11-0902"><FaGithub /></a> 
-                </div>
+            {/* Profile Card */}
+            <div className="relative z-10 bg-gray-800 bg-opacity-50 rounded-xl p-8 flex flex-col items-center shadow-lg backdrop-blur-md">
+              <img className="w-32 h-32 md:w-40 md:h-40 rounded-full mb-4 border-4 border-gray-700" src={rishi} alt="Rushikesh Bagade" />
+              <h2 className="text-2xl md:text-3xl font-semibold">Rushikesh Bagade</h2>
+              <p className="text-lg text-gray-300 mt-2 italic">Software Developer</p>
+              <div className="mt-4 flex space-x-4">
+                <a href="https://www.instagram.com/rishi_codes/" aria-label="Instagram">
+                  <FaInstagram className="text-purple-500 hover:text-purple-400 transition duration-200" size={25} />
+                </a>
+                <a href="https://www.linkedin.com/in/rushikesh-bagade11" aria-label="LinkedIn">
+                  <FaLinkedin className="text-blue-500 hover:text-blue-400 transition duration-200" size={25} />
+                </a>
+                <a href="https://github.com/RiShI11-0902" aria-label="GitHub">
+                  <FaGithub className="text-gray-500 hover:text-gray-400 transition duration-200" size={25} />
+                </a>
               </div>
             </div>
-            
-            <div className="md:w-[80%] lg:w-2/3 :p-4 p-2 md:ml-8 md:mt-20 lg:mt-28 2xl:mt-0 ">
-              <h2 className="text-2xl font-bold text-center md:text-left mt-10 md:mt-0">Here's who I am & what I do</h2>
-              <p className="mt-2 text-center md:text-left md:w-full md:text-2xl lg:text-base ">
-                I am a MERN stack developer specializing in React.js, based in India. Currently pursuing an MCA at GHRIETN, I have a strong background in full-stack development, creating dynamic and responsive web applications.
-              </p>
-              <ul className="list-disc ml-6 mt-4 text-lg">
-                <li><span className="font-bold text-green-500">Frontend:</span> React.js, JavaScript, HTML5, CSS3</li>
-                <li><span className="font-bold text-blue-500">Backend:</span> Node.js, Express.js, MongoDB</li>
-                <li><span className="font-bold text-red-500">Version Control:</span> Git, GitHub</li>
-                <li><span className="font-bold text-yellow-500">Languages :</span> Java (Core)</li>
+          </div>
 
-              </ul>
-              <p className="mt-4 text-center md:text-left">Let's connect and collaborate to turn innovative ideas into reality.</p>
-            </div>
+          {/* Bio Section */}
+          <div className="w-full lg:w-2/3 text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Here's who I am & what I do</h2>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
+              I am a MERN stack developer specializing in React.js, based in India. Currently pursuing an MCA at GHRIETN, I have a strong background in full-stack development, creating dynamic and responsive web applications.
+            </p>
+            <ul className="text-lg md:text-xl space-y-4 mb-6">
+              <li><span className="font-bold text-green-400">Frontend:</span> React.js, JavaScript, HTML5, CSS3</li>
+              <li><span className="font-bold text-blue-400">Backend:</span> Node.js, Express.js, MongoDB</li>
+              <li><span className="font-bold text-red-400">Version Control:</span> Git, GitHub</li>
+              <li><span className="font-bold text-yellow-400">Languages:</span> Java (Core)</li>
+            </ul>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Let's connect and collaborate to turn innovative ideas into reality.
+            </p>
           </div>
         </div>
         <Animation />
-
       </div>
-
     </>
-  )
+  );
 }
 
-export default About
-
-{/* <div className='text w-[40rem]  p-10 -mt-10 space-y-5'>
-              <p className='text-xl'>Here's who i am & what i do</p>
-              <p className=' font-bold playfair-display-font'>I am a MERN stack developer specializing in React.js, based in India. Currently pursuing an MCA at GHRIETN, I have a strong background in full-stack development, creating dynamic and responsive web applications.
-              </p>
-              <div className='text-lg space-y-4'> My expertise includes: <br />
-
-                <ol className='space-y-3'>
-                  <li> 1) <span className='text-green-500'>Frontend</span> : React.js, JavaScript, HTML5, CSS3</li>
-                  <li> 2) <span className='text-cyan-500'>Backend</span> : Node.js, Express.js, MongoDB</li>
-                  <li> 3) <span className='text-red-500'>Version Control</span> : Git, GitHub</li>
-                </ol>
-                
-              </div>
-
-              <p> Let's connect and collaborate to turn innovative ideas into reality.</p>
-              
-
-            </div> */}
+export default About;

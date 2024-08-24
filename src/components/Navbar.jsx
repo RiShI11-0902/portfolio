@@ -1,14 +1,15 @@
-import React, { useRef, useState } from 'react'
-import '../App.css'
-import { useGSAP } from '@gsap/react'
-import { gsap } from 'gsap'
+
+import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
-  const [color, setColor] = useState()
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
   const gradientColors = [
     'bg-gradient-to-r from-gray-800 to-black',
     'bg-gradient-to-r from-gray-700 to-gray-900',
@@ -22,71 +23,38 @@ const Navbar = () => {
     'bg-gradient-to-r from-yellow-900 to-gray-800',
   ];
 
-  // const bgColor = Math.floor(Math.random() * gradientColors.length)
-  // console.log(gradientColors[bgColor]);
-
-
-
-
-  const t1 = useRef()
-
-  useGSAP(() => {
-    gsap.from(".navLinks", {
-      y: -600,
-      duration: 1,
-    })
-    gsap.from(".links", {
-      y: -500,
-      opacity: 1,
-      stagger: 0.1,
-      delay: 0.70
-    })
-    gsap.from(".container",{
-      y: -400,
-      ease:'elastic.inOut',
-      duration:2
-    })
-  }, [toggle])
-
-  const toggleM = () => {
-    setToggle(true)
-    const bgColor = Math.floor(Math.random() * gradientColors.length)
-    console.log(gradientColors[bgColor]);
-    setColor(bgColor)
-    // if (index < gradientColors.length - 1) {
-    //   setIndex(index+1)
-    // }else{
-    //   setIndex(0)
-    // }
-
-  }
-
   return (
     <>
-      <div className='container flex justify-around items-center  p-5 font-bold ' >
-        <div className='dancing-script-Font text-5xl'>
+      <div className={`container flex justify-between items-center w-full max-w-6xl mx-auto rounded-3xl p-4 md:p-6 lg:p-8 font-bold shadow-lg text-white bg-${gradientColors[0]} `}>
+        {/* Logo */}
+        <div className='dancing-script-Font text-4xl md:text-5xl lg:text-3xl'>
           Rishi Codes
         </div>
-        <div>
-          <p className='cursor-pointer text-xl' onClick={toggleM}><GiHamburgerMenu /></p>
+
+        {/* Hamburger Icon */}
+        <div className='md:hidden'>
+          <button onClick={handleToggle} className='focus:outline-none'>
+            {toggle ? <RxCross1 size={30} /> : <GiHamburgerMenu size={30} />}
+          </button>
+        </div>
+
+        {/* Navigation Links */}
+        <div className={`fixed inset-0 z-40 bg-black bg-opacity-90 transition-transform duration-300 ease-in-out ${toggle ? 'translate-x-0' : 'translate-x-full'} md:static md:bg-transparent md:w-auto md:translate-x-0`}>
+          <div className='flex justify-end p-6 md:hidden'>
+            <button onClick={handleToggle} className='text-white focus:outline-none'>
+              <RxCross1 size={30} />
+            </button>
+          </div>
+          <ul className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 text-xl md:text-2xl lg:text-2xl text-white text-center md:text-left'>
+            <li><Link to='/home' className='links cursor-pointer text-white' onClick={handleToggle}>Home</Link></li>
+            <li><Link to='/about' className='links cursor-pointer text-white' onClick={handleToggle}>About</Link></li>
+            <li><Link to='/projects' className='links cursor-pointer text-white' onClick={handleToggle}>Projects</Link></li>
+            <li><Link to='/certificates' className='links cursor-pointer text-white' onClick={handleToggle}>Certificates</Link></li>
+          </ul>
         </div>
       </div>
-      {/* //${gradientColors[bgColor] */}
-      {
-        toggle ? <div className={` z-10 navLinks h-screen absolute top-0 left-0 w-full ${gradientColors[color]} }`}>
-          <div className='p-10 font-light text-7xl'>
-            <p className='absolute right-10 cursor-pointer ' onClick={() => setToggle(false)}><RxCross1 /></p>
-            <ul className='space-y-6 flex flex-col'>
-              <Link to={'/home'} className='links cursor-pointer caveat-font ' onClick={() => setToggle(false)}>Home</Link>
-              <Link to={'/about'} className='links cursor-pointer caveat-font ' onClick={() => setToggle(false)}>About</Link>
-              <Link to={'/projects'} className='links cursor-pointer caveat-font ' onClick={() => setToggle(false)}>Projects</Link>
-              <Link to={'/certficates'} className='links cursor-pointer caveat-font ' onClick={() => setToggle(false)}>Certificates</Link>
-            </ul>
-          </div>
-        </div> : ""
-      }
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
