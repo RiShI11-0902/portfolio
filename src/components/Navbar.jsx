@@ -45,11 +45,11 @@ const Navbar = () => {
               <RxCross1 size={30} />
             </button>
           </div>
-          <ul className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 text-xl md:text-2xl lg:text-2xl text-white text-center md:text-left'>
-            <li><Link to='/home' className='links cursor-pointer text-white' onClick={handleToggle}>Home</Link></li>
-            <li><Link to='/about' className='links cursor-pointer text-white' onClick={handleToggle}>About</Link></li>
-            <li><Link to='/projects' className='links cursor-pointer text-white' onClick={handleToggle}>Projects</Link></li>
-            <li><Link to='/certificates' className='links cursor-pointer text-white' onClick={handleToggle}>Certificates</Link></li>
+          <ul className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 text-xl md:text-2xl lg:text-xl text-white hover:text-blue-400 text-center md:text-left'>
+            <li><Link to='/home' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>Home</Link></li>
+            <li><Link to='/about' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>About</Link></li>
+            <li><Link to='/projects' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>Projects</Link></li>
+            <li><Link to='/certificates' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>Certificates</Link></li>
           </ul>
         </div>
       </div>
