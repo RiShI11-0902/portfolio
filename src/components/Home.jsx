@@ -25,14 +25,14 @@ const Home = () => {
     return () => clearInterval(interval)
   }, [])
 
-  useGSAP(()=>{
+  useGSAP(() => {
     gsap.from('.mainContainer', {
-      scale:0,
-      duration:2,
+      scale: 0,
+      duration: 2,
       // ease:'elastic'
     })
   })
-  
+
   return (
     <>
 
@@ -47,18 +47,18 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col 2xl:flex-row items-center 2xl:space-y-0 2xl:space-x-5 w-fit mx-auto space-y-5 '>
-          
+
           <a href="https://drive.google.com/file/d/1TWAnkVCCiM2X2hUlmjZgPdQkG2Wnp_XQ/view?usp=sharing" target='_blank'>
-          <button className=' shadow-gray-200 hover:border-b-white hover:border-b shadow-sm px-10 py-2 rounded-xl hover:shadow-lg active:scale-95'>
-          Resume
-          </button>
+            <button className=' shadow-gray-200 hover:border-b-white hover:border-b shadow-sm px-10 py-2 rounded-xl hover:shadow-lg active:scale-95'>
+              Resume
+            </button>
           </a>
         </div>
 
-       <div className='flex flex-row justify-around  w-full'>
-        <Animation />
-    
-</div>
+        <div className='flex flex-row justify-around  w-full'>
+          <Animation />
+
+        </div>
 
 
 

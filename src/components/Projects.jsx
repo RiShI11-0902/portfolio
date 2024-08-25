@@ -54,12 +54,19 @@ const Projects = () => {
         setFilteredData(searchResults);
     };
 
+    const viewCode = (event, code) => {
+        event.stopPropagation()
+        console.log(code);
+        
+        window.open(code, "_blank")
+    }
+
     return (
         <div className="bg-gray-900 min-h-screen text-white overflow-hidden">
             <Animation />
-           
+
             <Navbar />
-           
+
             <div className="flex justify-center mb-8 mt-10 w-80 mx-auto">
                 <input
                     type="text"
@@ -76,19 +83,23 @@ const Projects = () => {
                     {filteredData.map((project, index) => (
                         <div
                             key={index}
-                            className="project-card bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
-                            onClick={() => handleCardClick(project.image, project.visit)}
+                            className="project-card bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 cursor-pointer "
+                            onClick={(event) => {
+                                event.stopPropagation()
+                                handleCardClick(project.image, project.visit)
+                            }}
                         >
                             <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
                             <p className="mb-4 text-gray-300">{project.tech}</p>
-                            <div className="flex justify-between mt-4">
-                                <a
-                                    href={project.code}
-                                    className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-700 text-white rounded-lg hover:from-gray-600 hover:to-gray-800 transition-all"
-                                >
+                            {
+                                project.codeLink ? <div className="flex justify-between mt-4">
+                                <button onClick={(event) => viewCode(event, project.codeLink)} className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-700 text-white rounded-lg hover:from-gray-600 hover:to-gray-800 transition-all">
                                     Code
-                                </a>
-                            </div>
+                                </button>
+                                {/* <a href={project.code} className=''></a> */}
+                            </div> : " "
+                            }
+                            
                         </div>
                     ))}
                 </div>

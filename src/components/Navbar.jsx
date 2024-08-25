@@ -1,15 +1,27 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [random, setrandom] = useState()
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  useEffect(() => {
+
+    setInterval(() => {
+      let random = Math.floor(Math.random() * gradientColors.length)
+      setrandom(gradientColors[random])
+    }, 2000);
+   
+  }, [random])
+  
+
   const gradientColors = [
     'bg-gradient-to-r from-gray-800 to-black',
     'bg-gradient-to-r from-gray-700 to-gray-900',
@@ -25,7 +37,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`container flex justify-between items-center w-full max-w-6xl mx-auto rounded-3xl p-4 md:p-6 lg:p-8 font-bold shadow-lg text-white bg-${gradientColors[0]} `}>
+      <div className={`container flex justify-between items-center w-full max-w-6xl mx-auto rounded-3xl p-4 md:p-6 lg:p-8 font-bold shadow-lg text-white duration-1000 transition-colors `}>
         {/* Logo */}
         <div className='dancing-script-Font text-4xl md:text-5xl lg:text-3xl'>
           Rishi Codes
