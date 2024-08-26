@@ -11,6 +11,7 @@ const Certification = () => {
     const [img, setImg] = useState("")
     return (
         <>
+
             {
                 toggle ? <div className="popup-image fixed bg-black z-[100] h-full w-full top-0 left-0 opacity-90">
                     <div className="preview p-5" data-target="number-1">
@@ -22,9 +23,9 @@ const Certification = () => {
                 </div>
                     : ""
             }
-            <div className='bg-gray-900 text-white   overflow-hidden overflow-y-hidden h-full'>
-                <Animation />
+            <div className='bg-gray-900  text-white  overflow-hidden overflow-y-hidden h-full'>
                 <Navbar />
+                <Animation />
 
                 <p id='certification' className='text-2xl text-center mt-10 font-extrabold'>CERTIFICATIONS</p>
                 <div className="list md:grid md:grid-cols-3 md:w-fit p-5 space-y-5 w-fit md:space-y-0 mx-auto mt-10 md:gap-10 ">

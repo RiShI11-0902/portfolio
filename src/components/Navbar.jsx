@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`container flex justify-between items-center w-full max-w-6xl mx-auto rounded-3xl p-4 md:p-6 lg:p-8 font-bold shadow-lg text-white duration-1000 transition-colors `}>
+      <div className={`container flex justify-between items-center w-full max-w-6xl mx-auto rounded-3xl p-4 md:p-6 lg:p-8 font-bold shadow-lg text-white    `}>
         {/* Logo */}
         <div className='dancing-script-Font text-4xl md:text-5xl lg:text-3xl'>
           Rishi Codes
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className={`fixed inset-0 z-40 bg-black bg-opacity-90 transition-transform duration-300 ease-in-out ${toggle ? 'translate-x-0' : 'translate-x-full'} md:static md:bg-transparent md:w-auto md:translate-x-0`}>
+        <div className={`fixed inset-0 z-40 bg-opacity-90 transition-transform duration-300 ease-in-out ${toggle ? 'translate-x-0' : 'translate-x-full'} md:static md:bg-transparent md:w-auto md:translate-x-0`}>
           <div className='flex justify-end p-6 md:hidden'>
             <button onClick={handleToggle} className='text-white focus:outline-none'>
               <RxCross1 size={30} />

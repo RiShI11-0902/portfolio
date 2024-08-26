@@ -7,9 +7,9 @@ import Animation from './Animation';
 const About = () => {
   return (
     <>
-      <div className="bg-gray-900 overflow-hidden text-white min-h-screen flex flex-col items-center">
         <Navbar />
-        <div className="container mx-auto px-5 md:px-10 py-16 flex flex-col lg:flex-row items-center lg:space-x-10">
+      <div className="bg-gray-900 overflow-hidden text-white min-h-screen flex flex-col items-center ">
+        <div className="container mx-auto px-5 md:px-10 py-16 flex flex-col lg:flex-row items-center lg:space-x-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {/* Profile Section */}
           <div className="relative w-full lg:w-1/3 flex justify-center lg:justify-end mb-12 lg:mb-0">
             {/* Background Decorative Elements */}
