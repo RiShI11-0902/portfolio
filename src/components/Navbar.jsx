@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Hamburger Icon */}
         <div className='md:hidden'>
           <button onClick={handleToggle} className='focus:outline-none'>
-            {toggle ? <RxCross1 size={30} /> : <GiHamburgerMenu size={30} />}
+            {toggle ? " " : <GiHamburgerMenu size={30} />}
           </button>
         </div>
 
@@ -57,7 +57,7 @@ const Navbar = () => {
               <RxCross1 size={30} />
             </button>
           </div>
-          <ul className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 text-xl md:text-2xl lg:text-xl text-white hover:text-blue-400 text-center md:text-left'>
+          <ul className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8 text-xl md:text-2xl lg:text-xl text-white bg-black h-screen hover:text-blue-400 text-center md:text-left'>
             <li><Link to='/home' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>Home</Link></li>
             <li><Link to='/about' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>About</Link></li>
             <li><Link to='/projects' className='links cursor-pointer text-white hover:text-blue-400' onClick={handleToggle}>Projects</Link></li>
