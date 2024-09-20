@@ -49,6 +49,10 @@ const About = () => {
             </ul>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Let's connect and collaborate to turn innovative ideas into reality.
+              <div className='flex space-x-4'>
+                <p className=''><span className='font-semibold text-purple-400'>Email: </span> rushikeshbagade911@gmail.com </p>
+                <p className=''> <span className='font-semibold text-purple-400'>Mobile: </span> +91 7498140646 </p>
+              </div>
             </p>
           </div>
         </div>
