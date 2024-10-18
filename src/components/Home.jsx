@@ -51,7 +51,7 @@ const Home = () => {
 
         <div className='flex flex-col 2xl:flex-row items-center 2xl:space-y-0 2xl:space-x-5 w-fit mx-auto space-y-5 '>
 
-          <a href="https://drive.google.com/file/d/1TWAnkVCCiM2X2hUlmjZgPdQkG2Wnp_XQ/view?usp=sharing" target='_blank'>
+          <a href="" target='_blank'>
             <button className=' shadow-gray-200 hover:border-b-white hover:border-b shadow-sm px-10 py-2 rounded-xl hover:shadow-lg '>
               Resume
             </button>
