@@ -12,15 +12,7 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
-  useEffect(() => {
-
-    setInterval(() => {
-      let random = Math.floor(Math.random() * gradientColors.length)
-      setrandom(gradientColors[random])
-    }, 2000);
-   
-  }, [random])
-  
+ 
 
 
 
