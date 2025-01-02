@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Home from './components/Home'
 import About from './components/About'
 import {
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
-import Projects from './components/Projects';
-import Certificates from './components/Certificates';
+import Animation from './components/Animation';
 function App() {
 
   //  useGSAP(()=>{
@@ -23,16 +21,10 @@ function App() {
 
   return (
     <>
-
       <Router>
-        {/* <Home /> */}
+        <Animation />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects/>} />
-          <Route path='/certificates' element={<Certificates/>} />
-
+          <Route path='/' element={<About />} />
         </Routes>
       </Router>
 

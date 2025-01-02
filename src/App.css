@@ -1,3 +1,19 @@
 .container{
   display: flex;
 }
+/* .circle {
+  animation: fadeInUp 5s ease-in-out infinite;
+  background: linear-gradient(45deg, #6a5acd, #ff6347);
+  border: none;
+} */
+
+/* @keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(-900px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(500vh);
+  }
+} */

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
+import "../App.css"
 const Animation = () => {
 
     useEffect(() => {
 
         const ele = document.querySelectorAll('.circle')
-        gsap.set(ele, { y: -900, opacity: 0 })
+        gsap.set(ele, { y: -900, opacity: 1 })
         ele.forEach((ele, i) => {
             const random = Math.floor(Math.random() * 10);
 
@@ -14,7 +15,7 @@ const Animation = () => {
                 opacity: 1,
                 repeat: -1,
                 delay: i * 0.2 * random,
-                duration: 5,
+                duration: 10,
                 ease: 'none'
             })
         })
