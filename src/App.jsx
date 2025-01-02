@@ -8,17 +8,6 @@ import {
 } from "react-router-dom";
 import Animation from './components/Animation';
 function App() {
-
-  //  useGSAP(()=>{
-  //   gsap.to(".container",{
-
-  //   })
-  //  },[])
-
-
-
-
-
   return (
     <>
       <Router>
