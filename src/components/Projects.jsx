@@ -39,7 +39,7 @@ const Projects = () => {
                     type="text"
                     value={searchTerm}
                     onChange={handleSearch}
-                    className="w-full max-w-lg p-4 bg-gray-700 text-gray-200 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full  sm:max-w-lg p-4 bg-gray-700 text-gray-200 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="Search projects by technology..."
                 />
             </div>
@@ -49,13 +49,13 @@ const Projects = () => {
                     {filteredData.map((project, index) => (
                         <div
                             key={index}
-                            className="relative group w-96 h-64 bg-white backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:rotate-y-180 transition-transform"
+                            className="relative group w-72 h-64 bg-white backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:rotate-y-180 transition-transform"
                         >
 
                             {/* <p>{project.title}</p> */}
                             {/* Front of the Card */}
                             <div className="absolute inset-0 flex flex-col items-center justify-center bg-white
-                             text-black p-4 transition-transform duration-700 hover:rotate-y-180 group-hover:hidden ">
+                             text-black p-4 transition-transform  duration-700 hover:rotate-y-180 group-hover:hidden ">
                                 <img
                                     src={images.find((img) => img.includes(project.image))}
                                     alt="Project Thumbnail"
